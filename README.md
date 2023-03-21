@@ -1,4 +1,4 @@
-# gatsby-source-lever
+# gatsby-source-personio
 
 Source plugin for pulling data into [Gatsby](https://github.com/gatsbyjs) from
 [Personio](https://www.personio.com/).
