@@ -15,7 +15,9 @@ module.exports = {
         // Your Personio domain name.
         domainName: "acme",
         // The language to fetch the jobs in.
-        language: "de"
+        language: "de",
+        // Remove styling from job description.
+        removeStyling: true
       },
     },
   ],

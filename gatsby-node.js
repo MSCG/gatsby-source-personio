@@ -53,7 +53,7 @@ exports.sourceNodes = async ({
                 parsedPosition['jobDescriptions'] = position.jobDescriptions[0].jobDescription.map((item) => {
                     return {
                         name: item.name[0],
-                        value: item.value[0]
+                        value: pluginOptions.removeStyling ? item.value[0].replace(/ style=\"[^\"]*\"/g, "") : item.value[0]
                     }
                 })
             } else {
