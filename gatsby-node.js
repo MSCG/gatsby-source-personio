@@ -21,7 +21,6 @@ const POST_NODE_TYPE = `PersonioPosition`
 exports.sourceNodes = async ({
     actions,
     createContentDigest,
-    createNodeId,
     reporter
 }, pluginOptions) => {
     const { createNode } = actions
@@ -63,7 +62,6 @@ exports.sourceNodes = async ({
 
         createNode({
             ...parsedPosition,
-            id: createNodeId(`${POST_NODE_TYPE}-${parsedPosition.id}`),
             parent: null,
             children: [],
             internal: {
