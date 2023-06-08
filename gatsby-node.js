@@ -45,6 +45,9 @@ exports.sourceNodes = async ({
 
     // loop through data and create Gatsby nodes.
     positions.forEach(position => {
+        // skip the position if it doesn't have a description in the specified language.
+        if (!position.jobDescriptions[0].jobDescription) return
+
         let parsedPosition = {}
 
         Object.keys(position).forEach(key => {
