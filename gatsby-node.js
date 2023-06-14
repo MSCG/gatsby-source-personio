@@ -65,6 +65,7 @@ exports.sourceNodes = async ({
 
         createNode({
             ...parsedPosition,
+            node_locale: pluginOptions.language,
             parent: null,
             children: [],
             internal: {
