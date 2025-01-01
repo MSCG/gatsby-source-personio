@@ -13,7 +13,7 @@
   ],
   "author": "MSCG GmbH",
   "dependencies": {
-    "axios": "^1.7.8",
+    "axios": "^1.7.9",
     "xml2js": "^0.6.2"
   }
 }
