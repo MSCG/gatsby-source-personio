@@ -29,7 +29,7 @@ exports.sourceNodes = async ({
     fetchActivity.start()
 
     // Fetch data from personio and parse the xml.
-    const rawXml = await axios.get(`https://${pluginOptions.domainName}.jobs.personio.de/xml?language=${pluginOptions.language}`)
+    const rawXml = await axios.get(`https://${pluginOptions.domainName}.jobs.personio.com/xml?language=${pluginOptions.language}`)
     let data
     parseXmlString(rawXml.data, (error, result) => {
         data = result
